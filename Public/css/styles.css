@@ -1,0 +1,169 @@
+/* .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  } */
+
+/* Utilisez des classes spécifiques pour éviter les conflits */
+
+body {
+  background-color: #f8f2e4;
+  font-family: "Indie Flower", cursive;
+  color: #356d6e;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  color: #356d6e;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: #f8f2e4;
+  border-radius: 0 0 20px 20px;
+}
+.brand {
+  width: 70%;
+  text-align: center;
+  margin: 1rem auto;
+}
+.brandPres,
+.brandPres a {
+  font-size: 1.2rem;
+  color: #356d6e;
+  text-decoration: none;
+}
+.brand a {
+  color: #356d6e;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.nav-collapse {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbb996;
+  justify-content: center;
+  color: #356d6e;
+  width: 80%;
+  margin: auto;
+}
+#navbar .nav-link,
+.nav-item {
+  text-align: center;
+  color: #356d6e;
+  font-weight: bold;
+  font-style: normal;
+  list-style: none;
+}
+.nav-toggle {
+  background-color: #fbb996;
+  color: #356d6e;
+  border: #356d6e 2px solid;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin: auto;
+  padding: 0.8rem;
+}
+
+.navbar .active {
+  color: #fcf2e1;
+}
+.hidden {
+  display: none;
+}
+.navCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 95%;
+  margin: auto;
+}
+h3 {
+  font-size: 1.1rem;
+  width: 70%;
+  padding: 0 9%;
+  color: #274634;
+  font-weight: 700;
+}
+p {
+  font-size: 1rem;
+  width: 100%;
+}
+
+.ecoShopCard,
+.ecoRecipeCard,
+.localProducersCard,
+.ecoTipsCard {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  background-color: #f3e6cf;
+  margin: 1rem auto;
+  padding: 0.2rem;
+  border-radius: 10px;
+}
+
+.ecoShopCard a,
+.ecoRecipeCard a,
+.localProducersCard a,
+.ecoTipsCard a {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  color: #356d6e;
+}
+.accountSection,
+.accountSection a {
+  background-color: #f3e6cf;
+  text-decoration: none;
+  color: #356d6e;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  padding: 2%;
+  border-radius: 10px;
+}
+.accountSection img {
+  width: 15%;
+  margin: 1rem;
+}
+.accountSecTitle{
+  width: 70%;
+    white-space: nowrap;
+    
+  }
+  .accountSecDescr {
+    width: 60%;
+    margin: -3rem 0 0 6.2rem;
+}
+.signUpSection {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.signUpBtn,
+ .signUpBtn a{
+  background-color: #274634;
+  color: #f8f2e4;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+

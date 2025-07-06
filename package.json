@@ -1,0 +1,27 @@
+{
+  "name": "merise",
+  "version": "1.0.0",
+  "main": "app.js",
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "scripts": {
+    "dev": "nodemon --exec node server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.0",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "supabase": "^2.26.9"
+  },
+  "description": ""
+}
