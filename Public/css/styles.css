@@ -24,6 +24,12 @@ header {
   background-color: #f8f2e4;
   border-radius: 0 0 20px 20px;
 }
+.active {
+  color: #fcf2e1;
+}
+.hidden {
+  display: none;
+}
 .brand {
   width: 70%;
   text-align: center;
@@ -142,14 +148,13 @@ p {
   width: 15%;
   margin: 1rem;
 }
-.accountSecTitle{
+.accountSecTitle {
   width: 70%;
-    white-space: nowrap;
-    
-  }
-  .accountSecDescr {
-    width: 60%;
-    margin: -3rem 0 0 6.2rem;
+  white-space: nowrap;
+}
+.accountSecDescr {
+  width: 60%;
+  margin: -3rem 0 0 6.2rem;
 }
 .signUpSection {
   display: flex;
@@ -157,7 +162,7 @@ p {
   margin: 1rem;
 }
 .signUpBtn,
- .signUpBtn a{
+.signUpBtn a {
   background-color: #274634;
   color: #f8f2e4;
   padding: 0.5rem;
@@ -167,3 +172,77 @@ p {
   text-decoration: none;
 }
 
+/* login & signIn section */
+
+.signupForm,
+.loginForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfdf5;
+  width: 75%;
+  margin: 2% auto;
+  padding: 1rem;
+  border: var(--element-color) 1px solid;
+  border-radius: 10px;
+}
+.loginSect {
+  color: #05f2f2;
+}
+.loginSect p {
+  color: #274634;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+.loginSect .signupLink {
+  color: #f8f2e4;
+  background-color: #356d6e;
+  text-align: center;
+  padding: 2%;
+  border-radius: 10px;
+}
+.formTitle {
+  margin: 1rem auto;
+  text-align: center;
+}
+label {
+  color: #274634;
+  width: 80%;
+  text-align: center;
+}
+input {
+  padding: 0.8rem;
+  background-color: #f8f2e4;
+  border: none;
+  width: 75%;
+  border-radius: 10px;
+}
+.forgotPass {
+  color: #274634;
+  font-size: 0.8rem;
+  align-self: flex-start;
+  margin: 0.5rem auto;
+}
+#signupBtn,
+#loginBtn {
+  margin: 1rem auto;
+  background-color: #274634;
+  padding: 0.5rem;
+  border: var(--header-bg-color) 1px solid;
+  color: #fdfdf5;
+  border-radius: 10px;
+  margin: 2rem auto 0;
+}
+.errorForm {
+  background-color: #f205b3;
+  padding: 1rem;
+}
+.bi-arrow-left-circle {
+  font-size: 1.5rem;
+  color: var(--element-color);
+  cursor: pointer;
+}
+.result {
+  color: var(--header-bg-color);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <main>
+        <h2 class="formTitle">Connexion</h2>
+        <section class="loginSect">
+
+            <form action="" class="loginForm" method="post">
+
+                <label for="email">Email:</label>
+                <input type="email" name="" id="email" placeholder="Adresse e-mail"/>
+                <label for="pass">Password :</label>
+                <input type="password" name="" id="pass" placeholder="Mot de passe"/>
+                <a class="forgotPass" href="#">Mot de passe oublié?</a>
+                <button type="submit" id="loginBtn">Se connecter</button>
+                <p class="result hidden"></p>
+            </form>
+            <p>Nouveau Ici ?
+                <a href="#" class="signupLink">S'inscrire</a>
+            </p>
+        </section>
+        <section class="errorForm hidden">
+        </section>
+        <section class="signupSect hidden">
+            <form class="signupForm" action="/api/auth/" method="post">
+                <i class="bi bi-arrow-left-circle"></i>
+                <label for="pseudo">Pseudo:*</label>
+                <input type="text" name="pseudo" id="pseudo" required />
+                <label for="lastname">Nom:</label>
+                <input type="text" name="lastname" id="lastname" />
+                <label for="name">Prénom:</label>
+                <input type="text" name="name" id="name" />
+                <label for="phone">N° téléphone:</label>
+                <input type="text" name="phone" id="phone" />
+                <label for="location">Localité:</label>
+                <input type="text" name="location" id="location" />
+                <label for="avatar">Avatar:</label>
+                <input type="file" name="avatar" id="avatar" />
+                <label for="email">Email:*</label>
+                <input type="email" name="email" id="emailSignup" required />
+                <label for="pass">Mot de passe :*</label>
+                <input type="password" name="password" id="passSignup" required />
+                <label for="confirmPass">Confirmer mot de passe :*</label>
+                <input type="password" name="confirmPass" id="confirmPass" required />
+                <button type="submit" id="signupBtn">S'inscrire</button>
+                <p class="result"></p>
+
+            </form>
+        </section>
+
+        <!-- <button id="logoutBtn">Se déconnecter</button>  -->
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> - Trouv'tout</p>
+
+    </footer>
+    <!-- scripts -->
+    <script src="./main.js"></script>
+    <script src="./login.js"></script>
+</body>
+
+</html>
