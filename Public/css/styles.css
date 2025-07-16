@@ -50,7 +50,7 @@ header {
   display: flex;
   margin: auto;
   flex-wrap: wrap;
-  width: 50%;
+  width: 100%;
 }
 .nav-list {
   display: flex;
@@ -59,11 +59,11 @@ header {
 }
 .nav-collapse {
   display: flex;
-  flex-direction: column;
-  background-color: #fbb996;
+  /* flex-direction: column; */
+  background-color: #f3e6cf;
   justify-content: center;
   color: #356d6e;
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 #navbar .nav-link,
@@ -75,15 +75,16 @@ header {
   list-style: none;
 }
 .nav-toggle {
-  background-color: #fbb996;
+  background-color: #fcf2e1;
   color: #356d6e;
-  border: #356d6e 2px solid;
   border-radius: 5px;
-  font-size: 1.2rem;
+  border: none;
+  width: 25%;
   margin: auto;
-  padding: 0.8rem;
 }
-
+.menuIcon {
+  width: 50%;
+}
 .navbar .active {
   color: #fcf2e1;
 }
@@ -96,6 +97,11 @@ header {
   justify-content: space-evenly;
   width: 95%;
   margin: auto;
+}
+.homeSect{
+  display: flex;
+  justify-content: center;
+  color: #d38842;
 }
 h3 {
   font-size: 1.1rem;
@@ -245,4 +251,14 @@ input {
 }
 .result {
   color: var(--header-bg-color);
+}
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+.allergies {
+  width: 40%;
+  color: #274634;
 }

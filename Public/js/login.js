@@ -22,9 +22,6 @@ document.querySelector(".signupForm").addEventListener("submit", async (e) => {
 
   const signupForm = document.querySelector(".signupForm");
   const pseudo = signupForm["pseudo"].value;
-  const lastname = signupForm["lastname"].value;
-  const name = signupForm["name"].value;
-  const phone = signupForm["phone"].value;
   const location = signupForm["location"].value;
   const avatar = signupForm["avatar"].value;
   const email = signupForm["emailSignup"].value;
@@ -49,10 +46,20 @@ document.querySelector(".signupForm").addEventListener("submit", async (e) => {
     errorContainer.innerHTML = errorMessage;
     return;
   }
+  // const diet = document.getElementById("diet").value;
 
+  // const allergyInputs = document.querySelectorAll(
+  //   'input[name="allergies"]:checked'
+  // );
+  // const allergies = Array.from(allergyInputs).map((input) => input.value);
+
+  // const preferences = {
+  //   diet: diet || null,
+  //   allergies: allergies,
+  // };
   // Envoi vers l'API pour créer un utilisateur
   try {
-    const response = await fetch("/api/auth", {
+    const response = await fetch("/api/auth/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -61,11 +68,7 @@ document.querySelector(".signupForm").addEventListener("submit", async (e) => {
         email: email,
         password: pass,
         pseudo: pseudo,
-        name: name,
-        lastname: lastname,
-        phone: phone,
-        location: location,
-        avatar: avatar,
+        location: location
       }),
     });
 
@@ -115,7 +118,3 @@ loginform.addEventListener("submit", async (e) => {
   }
 });
 
-// // document.getElementById("logoutBtn").addEventListener("click", async () => {
-// //   await logout();
-// //   document.getElementById("status").textContent = "Déconnecté";
-// // });

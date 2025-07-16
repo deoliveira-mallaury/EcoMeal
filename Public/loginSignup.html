@@ -22,9 +22,9 @@
             <form action="" class="loginForm" method="post">
 
                 <label for="email">Email:</label>
-                <input type="email" name="" id="email" placeholder="Adresse e-mail"/>
+                <input type="email" name="" id="email" placeholder="Adresse e-mail" />
                 <label for="pass">Password :</label>
-                <input type="password" name="" id="pass" placeholder="Mot de passe"/>
+                <input type="password" name="" id="pass" placeholder="Mot de passe" />
                 <a class="forgotPass" href="#">Mot de passe oublié?</a>
                 <button type="submit" id="loginBtn">Se connecter</button>
                 <p class="result hidden"></p>
@@ -40,22 +40,34 @@
                 <i class="bi bi-arrow-left-circle"></i>
                 <label for="pseudo">Pseudo:*</label>
                 <input type="text" name="pseudo" id="pseudo" required />
-                <label for="lastname">Nom:</label>
-                <input type="text" name="lastname" id="lastname" />
-                <label for="name">Prénom:</label>
-                <input type="text" name="name" id="name" />
-                <label for="phone">N° téléphone:</label>
-                <input type="text" name="phone" id="phone" />
                 <label for="location">Localité:</label>
                 <input type="text" name="location" id="location" />
-                <label for="avatar">Avatar:</label>
-                <input type="file" name="avatar" id="avatar" />
+                <!-- <label for="avatar">Avatar:</label>
+                <input type="file" name="avatar" id="avatar" /> -->
                 <label for="email">Email:*</label>
                 <input type="email" name="email" id="emailSignup" required />
                 <label for="pass">Mot de passe :*</label>
                 <input type="password" name="password" id="passSignup" required />
                 <label for="confirmPass">Confirmer mot de passe :*</label>
                 <input type="password" name="confirmPass" id="confirmPass" required />
+                <!-- <label>
+                    Régime :
+                    <select name="diet" id="diet">
+                        <option value="">-- Aucun --</option>
+                        <option value="vegetarian">Végétarien</option>
+                        <option value="vegan">Végan</option>
+                        <option value="flexitarian">Flexitarien</option>
+                    </select>
+                </label>
+                <fieldset>
+                    <label>Allergies :</label>
+                    <label class="allergies"><input type="checkbox" name="allergies" value="gluten"> Gluten</label><br>
+                    <label class="allergies"><input type="checkbox" name="allergies" value="lactose"> Lactose</label><br>
+                    <label class="allergies"><input type="checkbox" name="allergies" value="arachides"> Arachides</label><br>
+                    <label class="allergies"><input type="checkbox" name="allergies" value="soja"> Soja</label><br>
+                </fieldset> -->
+
+
                 <button type="submit" id="signupBtn">S'inscrire</button>
                 <p class="result"></p>
 
@@ -69,8 +81,8 @@
 
     </footer>
     <!-- scripts -->
-    <script src="./main.js"></script>
-    <script src="./login.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
