@@ -49,7 +49,8 @@ const loadHeader = async () => {
             console.warn(
               result.message || "Erreur lors de la récupération utilisateur."
             );
-            return;
+          } else {
+            window.location.href = "/";
           }
         } catch (error) {
           console.error("Erreur réseau :", error.message);
@@ -78,9 +79,7 @@ const getUser = async () => {
       document.getElementById("logout").classList.add("hidden");
       document.getElementById("account").classList.add("hidden");
       document.querySelector(".signUpBtn").classList.remove("hidden");
-        document.querySelector(
-        ".titleSection"
-      ).classList.add('hidden')
+      document.querySelector(".titleSection").classList.add("hidden");
     } else {
       const pseudo = result.pseudo || result.email;
       document.querySelector(
